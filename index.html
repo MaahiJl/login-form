@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>صفحه لاگین</title>  
+    <link rel="stylesheet" href="/styles/style.css">
+</head>  
+<body>  
+
+    <div id="error-message">لطفا اطلاعات خود را به درستی وارد نمایید.</div>  
+
+    <div class="login-box">  
+        <h2>ورود به حساب</h2>  
+        <input type="text" class=" input-field input__user-name" onkeydown="checkUserNameCharacters()" placeholder="نام کاربری" required>  
+        <div class="input-warning" id="user-name__warning">نام کاربری باید حداقل ۱۲ کاراکتر باشد</div>
+        <input type="password" class="input-field input__password" onkeydown="checkPassCharacters()" placeholder="رمز عبور" required>  
+        <div class="input-warning" id="password__warning">رمز عبور باید حداقل ۸ کاراکتر باشد</div>
+        <button class="login-button" id="login-button" onclick="checkValidation()">لاگین</button>  
+    </div>  
+    
+
+
+    <script src="/Js files/game.js"></script>
+</body>  
+</html>
